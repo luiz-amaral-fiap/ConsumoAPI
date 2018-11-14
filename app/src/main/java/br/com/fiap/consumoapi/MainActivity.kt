@@ -10,13 +10,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         btnSearch.setOnClickListener {
-            startActivities(Intent(this, SearchActivity::class.java))
-
-
+            startActivity(Intent(this,
+                    SearchActivity::class.java))
         }
-
-
     }
 }
